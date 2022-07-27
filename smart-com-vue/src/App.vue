@@ -2,7 +2,7 @@
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import ListComponent from './components/ListComponent.vue'
-import {ListItem} from "@/class/ListItem";
+import type {ListItem} from "@/class/ListItem";
 import {computed, ref} from "vue";
 import type {Ref} from "vue";
 

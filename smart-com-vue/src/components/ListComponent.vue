@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-  import {ListItem} from "@/class/ListItem";
+  import type {ListItem} from "@/class/ListItem";
 
   defineProps<{
     listItems: Array<ListItem>

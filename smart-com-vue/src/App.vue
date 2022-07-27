@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import ListComponent from './components/ListComponent.vue'
+import {ListItem} from "@/class/ListItem";
+
+const list1: Array<ListItem> = [
+  {text: 'AAA', id: 0},
+  {text: 'CCC', id: 2}
+]
+
+const list2: Array<ListItem> = [
+  {text: 'BBB', id: 1},
+  {text: 'DDD', id: 3}
+]
 </script>
 
 <template>
@@ -10,14 +22,10 @@ import 'bootstrap/dist/css/bootstrap.css'
       <p>Lists with drag-drop functionality. Made using Vue, Typescript, Bootstrap and native D&D APIs</p>
       <div class="row">
         <div class="col-6">
-          <ul class="list-group">
-            <li class="list-group-item">AAA</li>
-          </ul>
+          <ListComponent :list-items="list1"/>
         </div>
         <div class="col-6">
-          <ul class="list-group">
-            <li class="list-group-item">BBB</li>
-          </ul>
+          <ListComponent :list-items="list2"/>
         </div>
       </div>
     </div>

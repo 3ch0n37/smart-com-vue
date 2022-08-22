@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
-import ListComponent from './components/ListComponent.vue'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import ListComponent from './components/ListComponent.vue';
 import type {ListItem} from "@/class/ListItem";
 import {computed, ref} from "vue";
 import type {Ref} from "vue";
@@ -44,7 +44,7 @@ function onDrop(evt: DragEvent, list: number) {
   <main>
     <div class="container">
       <h2>Smart Com challenge</h2>
-      <p>Lists with drag-drop functionality. Made using Vue, Typescript, Bootstrap and native D&D APIs</p>
+      <p>Lists with drag-drop functionality. Made using Vue, Typescript, Bootstrap and native D&amp;D APIs</p>
       <div class="row">
         <div class="col-6">
           <ListComponent
